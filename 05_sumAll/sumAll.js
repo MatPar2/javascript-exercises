@@ -1,6 +1,6 @@
 const sumAll = function(initialNumber, finalNumber) {
   // Check if any number is negative, or if it's not an integer, and return an error message
-  if (initialNumber < 0 || finalNumber < 0 || initialNumber !== parseInt(initialNumber) || finalNumber !== parseInt(finalNumber)) {
+  if (initialNumber < 0 || finalNumber < 0 || !Number.isInteger(initialNumber) || !Number.isInteger(finalNumber)) {
     return "ERROR";
   }
 
