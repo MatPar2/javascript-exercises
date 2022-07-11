@@ -11,8 +11,10 @@ const sumAll = function(initialNumber, finalNumber) {
     finalNumber = tmp;
   }
 
+  // set a counter to add all numbers in between
   let counter = 0;
-  // For-loop option
+
+  // loop through all values between the initial and final number, and sum each value to the global counter
   for (let i = initialNumber; i <= finalNumber; i++) {
     counter += i;
   }
