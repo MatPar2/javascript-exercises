@@ -11,18 +11,22 @@ const sum = function(arr) {
     return sum += elem;
   }, 0);
 };
-console.log(sum([7, 1, 2]));
 
-const multiply = function() {
-
+const multiply = function(arr) {
+  return arr.reduce((mult, elem) => {
+    return mult *= elem;
+  }, 1);
 };
 
-const power = function() {
-	
+const power = function(a, b) {
+	return a ** b;
 };
 
-const factorial = function() {
-	
+const factorial = function(num) {
+	if (num === 0 || num === 1) return 1;
+  if (num < 0) return "ERROR. Negative number";
+
+  return factorial(num-1) * num;
 };
 
 // Do not edit below this line
