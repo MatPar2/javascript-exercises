@@ -1,21 +1,6 @@
 const getTheTitles = function(booksArr) {
-  return booksArr.reduce((arr, elem) => {
-    return arr.concat(elem.title);
-  }, []);
+  return booksArr.map(book => book.title);
 };
-
-const books = [
-  {
-    title: 'Book',
-    author: 'Name'
-  },
-  {
-    title: 'Book2',
-    author: 'Name2'
-  }
-]
-
-console.log(getTheTitles(books));
 
 // Do not edit below this line
 module.exports = getTheTitles;
