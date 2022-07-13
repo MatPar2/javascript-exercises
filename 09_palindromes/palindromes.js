@@ -1,5 +1,5 @@
 const palindromes = function (str) {
-  const rawLetters = str.toLowerCase().replace(/[\s,\.!]/g, "");
+  const rawLetters = str.toLowerCase().replace(/[^a-z]/g, "");
   return rawLetters.split('').reverse().join('') === rawLetters;
 };
 
